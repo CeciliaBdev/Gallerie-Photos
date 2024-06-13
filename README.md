@@ -33,3 +33,8 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Test connexion
+
+Login: projetvue
+Motdepasse: galleriephoto

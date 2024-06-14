@@ -10,18 +10,9 @@ const IDENTIFIANT = import.meta.env.VITE_IDENTIFIANT
 const PASSWORD = import.meta.env.VITE_PASSWORD
 
 const log = async () => {
-
-  console.log('identifiant',IDENTIFIANT )
-  console.log('PASSWORD',PASSWORD )
-  console.log('username.value',username.value )
-  console.log('password.value',password.value )
   try {
     if (username.value === IDENTIFIANT && password.value === PASSWORD) {
-      // const userCredential = await signInAnonymously(auth)
-      // console.log('Utilisateur connecté:', userCredential.user)
-      // router.push('/gallery')
       await login(username.value, password.value)
-      // Rediriger l'utilisateur après la connexion réussie
       router.push('/gallery')
     } else {
       errorMessage.value = 'Identifiant ou mot de passe incorrect'

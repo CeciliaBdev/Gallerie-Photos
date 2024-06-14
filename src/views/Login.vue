@@ -14,7 +14,7 @@ const log = async () => {
   console.log('identifiant',IDENTIFIANT )
   console.log('PASSWORD',PASSWORD )
   console.log('username.value',username.value )
-  console.log('password.value',Ipassword.value )
+  console.log('password.value',password.value )
   try {
     if (username.value === IDENTIFIANT && password.value === PASSWORD) {
       // const userCredential = await signInAnonymously(auth)
